@@ -1,0 +1,17 @@
+sort1 uses: bubble
+How do you know?: bubble sort as bubble sort can premptivly know the array is sorted. this is done by making a variable that trackes the number of swaps in a pass. if there are
+zero swaps the list is sorted. extrapolating from this bubble sort should out proform selection sort in speed when looking at a sorted list. using (time1 + time2 + time3 - 3*0.26)/3 to find the
+average time we find that sort1 runs sorted50000.txt in ~0.96 seconds way faster then sort3 which ran in ~2.72. a second validation of this is comparing the times to run reversed50000.txt
+as becuse bubble sort moves the highest value to the end of the array a reversed list causes a maximum amount of swap opperations. this tells us it should be worse in reverse then sort 3,
+which it is as when timed sort1 takes ~5.43 second opposed to sort 3s ~3.12 seconds
+
+
+sort2 uses: merge
+
+How do you know?: i timed each sorting algorithm on random50000.txt 3 times, then did the operation (time1 + time2 + time3 - 3*0.26)/3 to find the average time accounting for reaction time
+sort2 took on average 0.628 seconds(the lowest) this should be expected as merge sort has a run time of nlog2(n) making it significently faster. this explains the other 2 taking on average 3.2 and 6.92
+seconds respectivly
+
+sort3 uses: selection
+
+How do you know?: process of emilination and examining the results from the 3 tests this is the only option remaining
